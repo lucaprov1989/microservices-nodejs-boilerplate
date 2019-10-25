@@ -1,0 +1,40 @@
+{
+  "name": "microservice-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for microservices with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec src/**/*.spec.js",
+    "start": "node src/index.js",
+    "node-debug": "DEBUG=express* node src/index.js",
+    "chrome-debug": "node --debug-brk --inspect src/index.js",
+    "test-integration": "mocha ./integration-test/integration-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaprov1989/microservices-nodejs-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "microservices",
+    "nodejs"
+  ],
+  "author": "Luca Provini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaprov1989/microservices-nodejs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/lucaprov1989/microservices-nodejs-boilerplate#readme",
+  "dependencies": {
+    "awilix": "^4.2.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "http-status": "^1.4.0",
+    "mocha": "^6.2.2",
+    "mongodb": "^3.3.3",
+    "morgan": "^1.9.1",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  }
+}
